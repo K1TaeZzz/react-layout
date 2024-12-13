@@ -10,25 +10,30 @@ const ProductPromo = () => {
         <h2 className="text-6xl font-bold">
           Формирование адаптивного <br /> плана питания под ваши нагрузки
         </h2>
-        <div className="mt-24">
-          <img src={promoFrame} alt="" />
+        <div className="mt-24 ">
+          <img
+            src={promoFrame}
+            alt=""
+            className="w-[450px] md:w-[1400px] h-[550px] md:h-[600px] bg-cover bg-left rounded-3xl "
+          />
 
-          <div className="flex items-center justify-center flex-wrap mt-10 gap-8">
-            <div className=" mb-5 ">
-              <img src={promoFrame2} alt="" className="w-[900px] h-[550px]" />
-              <p className="text-2xl font-bold mt-8">
+          <div className="flex items-center justify-between flex-wrap mt-10  ">
+            <div className=" flex flex-col">
+              <img src={promoFrame2} alt="" className="w-[410px] h-[550px]" />
+              <p className="text-xl font-bold mt-8">
                 Используйте готовые планы <br /> или создавайте свои.
               </p>
             </div>
-            <div className="mt-5">
-              <img src={promoFrame3} alt="" className=" w-[900px] h-[550px] " />
+            <div className=" flex flex-col mt-12">
+              <img src={promoFrame3} alt="" className=" w-[410px] h-[550px] " />
               <p className="text-xl font-bold mt-8">
-                Получайте информацию по <br /> продуктам и суточным нормам употребления с учетом <br />
+                Получайте информацию по <br /> продуктам и суточным нормам <br />
+                употребления с учетом <br />
                 нагрузки
               </p>
             </div>
-            <div>
-              <img src={promoFrame4} alt="" className="w-[900px] h-[550px]" />
+            <div className="flex flex-col mt-5">
+              <img src={promoFrame4} alt="" className="w-[410px] h-[550px]" />
               <p className="text-xl font-bold mt-8">
                 Рацион на день адаптируется <br /> под ваши нагрузки. Учитывает <br />
                 что вы уже съели
